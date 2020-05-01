@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+<style> 
+div { width: 100px; height: 100px;  background: red; margin: 10px; display: inline-block; 
+  transition: width 1s, height 2s, background 3s; visibility: hidden; }
+div.popup { position: relative; left: 50px; top: 50px; width: 500px; height: 500px; background: yellow;  }
+
+</style>
+</head>
+<body>
+
+<div>
+  <button onclick="$('div:nth-of-type(1)').removeClass('popup').css('visibility', 'hidden')").>close</button>
+</div>
+<button onclick="$('div:nth-of-type(1)').css('visibility', 'visible').addClass('popup')").>popup</button>
+
+
+</body>
+</html>

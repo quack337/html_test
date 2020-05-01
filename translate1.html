@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body{ padding: 50px; }
+  div { border: 1px solid black; width: 100px; height: 100px; margin: 10px; display: inline-block; background-color: white; }
+  div:nth-child(1):hover { transform: translate(20px, 20px); }
+  div:nth-child(2):hover { transform: rotate(45deg); }
+  div:nth-child(3):hover { transform: scale(1.2, 1.2); }
+  div:nth-child(4):hover { transform: scaleY(2); }
+  div:nth-child(5):hover { transform: skewX(20deg); }
+  div:nth-child(6):hover { transform: skewY(20deg); }
+  div:nth-child(7):hover { transform: skew(20deg, 20deg); }
+  div:nth-child(9):hover { transform: matrix(1.2, 0, 0, 2, 0, 0); }
+  div:nth-child(10):hover { transform: matrix(1, 0, 0, 1, 50, 50); }
+  div:nth-child(11):hover { transform: matrix(1.5, 0, 0, 1.5, 30, 30); }
+</style>
+</head>
+<body>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+<hr />
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+  <div>13</div>
+  <div>14</div>
+<br />
+matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+</body>
+</html> 

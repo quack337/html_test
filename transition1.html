@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+<style> 
+div { width: 100px; height: 100px;  background: red; margin: 10px; display: inline-block; }
+div:nth-child(1) { transition: width 1s; }
+div:nth-child(2) { transition: width 1s, height 3s; }
+div:nth-child(3) { transition: width 0.3s, height 0.5s; }
+div:nth-child(4) { transition: width 0.3s, height 0.5s; transition-delay: 1s; }
+div:nth-child(5) { transition: width 0.3s, height 0.5s, left 0.5s, right 0.5s, background 2s; }
+
+div:hover { width: 300px; height: 300px; }
+div:hover:nth-child(5) { position: relative; left: 50px; top: 50px; width: 500px; height: 500px; background: yellow; }
+
+</style>
+</head>
+<body>
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+</body>
+</html>

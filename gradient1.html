@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  div { width: 800px; height: 60px; margin: 10px; }
+  div:nth-child(1) { background: linear-gradient(#eee, #aaa); }
+  div:nth-child(2) { background: linear-gradient(to right, #eee, #aaa); }
+  div:nth-child(3) { background: linear-gradient(to bottom right, #eee, #aaa); }
+  div:nth-child(4) { background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) }
+  div:nth-child(5) span { height: 50px; width: 50px; display: inline-block; margin: 4px; }
+  div:nth-child(5) span:nth-child(1) { background: linear-gradient(0deg, #eee, #888)}
+  div:nth-child(5) span:nth-child(2) { background: linear-gradient(45deg, #eee, #888)}
+  div:nth-child(5) span:nth-child(3) { background: linear-gradient(90deg, #eee, #888)}
+  div:nth-child(5) span:nth-child(4) { background: linear-gradient(135deg, #eee, #888)}
+  div:nth-child(5) span:nth-child(5) { background: linear-gradient(180deg, #eee, #888)}
+  div:nth-child(5) span:nth-child(6) { background: linear-gradient(225deg, #eee, #888)}
+  div:nth-child(5) span:nth-child(7) { background: linear-gradient(270deg, #eee, #888)}
+  div:nth-child(6) { background: linear-gradient(to right, red, yellow, green); }
+  div:nth-child(7) { background: linear-gradient(to right, #0000ff, #ffffff); }
+  div:nth-child(8) { background: linear-gradient(to right, rgba(0,0,255,1), rgba(0,0,255,0)); }
+  div:nth-child(9) { background: repeating-linear-gradient(to right, #0f0, #08f 20%); } /* 20% 에서 끝나니까 5회 반복 */
+  div:nth-child(10) { background: repeating-linear-gradient(to right, #ff0, #0f0, #0ff); }
+  div:nth-child(11) { background: repeating-linear-gradient(to right, #ff0, #0f0 80%, #0ff); } /* 녹색이 80% 위치 */
+</style>
+</head>
+<body>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</body>
+</html> 

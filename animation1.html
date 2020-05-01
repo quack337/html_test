@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body { padding: 50px; }
+div { width: 100px; height: 100px; display: inline-block; margin: 10px; background-color: yellow; position: relative; }
+div:nth-child(1) { animation-name: example1; animation-duration: 10s; }
+div:nth-child(2) { animation-name: example2; animation-duration: 10s; }
+
+@keyframes example1 {
+  from {background-color: red; height: 200px; width: 200px; left: 100px; top: 100px; }
+  to {background-color: yellow; left: 0; top: 0; }
+}
+
+@keyframes example2 {
+  0%  {background-color: blue;  height: 200px; width: 200px; left: 100px; top: 100px; }
+  50% {background-color: green; left: 50px; top: 50; }
+  100%  {background-color: yellow; left: 0; top: 0; }
+}
+</style>
+</style>
+</head>
+<body>
+
+<div></div>
+<div></div>
+
+</body>
+</html>
